@@ -1,0 +1,295 @@
+/* header{
+    background-color: red;/*color de fondo*/
+/* 
+    #site-header{
+background-color: red;para id
+    }
+
+    .encabezado{
+        color:darkmagenta;para clases
+    } */
+
+  /* nota: los id solo pueden aceptar un parametro en cambio las clases si pueden    */
+html{
+    font-size: 62.5%;/*10px*/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+  .contenedor{
+    max-width: 120rem;
+    margin:0 auto 0 auto;
+}
+/* utilidades */
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* iconos-nosotros */
+.encabezado-nosotros{
+    text-align: center;
+    font-weight: 300;
+
+}
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.2rem;
+   
+}
+.icono{
+    flex-basis: calc(33.3% - 1rem); /*separacion entre columnas */
+    text-align: center;
+    line-height: 2.4rem;/*separacion entre lineas*/
+}
+
+.icono h3{
+    text-transform: uppercase; /*letrasen mayusculas*/
+}
+
+.barra{
+    display:flex;
+    justify-content:space-between;/*permite alinear horizontalmente*/
+    align-items: center;/*permite alinear verticalmente*/
+    padding-top:3rem; 
+}
+
+ .site-header.inicio {
+background: url(../img/header.jpg);
+background-position: center;/*pocisionar la imagen*/
+background-size:cover;/*ajusta la imagen ala pantalla*/ 
+    height: 100vh;/*altura de la pantalla(toda la pantalla)*/
+    min-height: 60rem;
+ } /* definir un header con iamgen de fondo */
+
+ .contenido-header{
+     height: 100%;
+     justify-content: space-between;
+     display:flex;
+     flex-direction: column;/*alinear columna*/
+ }
+ .contenido-header h1{
+     color:white;
+     padding-bottom: 2rem;
+     max-width: 60rem;
+     line-height: 5rem;
+ }
+
+ .navegacion a{
+color:white;
+text-decoration: none;
+margin-right: 2rem;
+font-size:2rem;
+ }
+ .navegacion a:hover{/*da un efecto que sobresalga la letra*/
+     color: #0f0f0f;
+ }
+
+ .contenedor-anuncios{
+     display: flex;
+     justify-content: space-between;
+     
+ }
+
+ .anuncio {
+     flex-basis: calc(33.3% - 1rem);
+     border-style: solid;
+    border-color:gray;
+    border-width: 1px;
+     background-color:#f5f5f5;
+ }
+
+ .contenido-anuncios{
+     padding:2rem;
+ }
+ .contenido-anuncios h3, .contenido-anuncios{
+     margin:0;
+ }
+ .precio{
+     color: #71B100;
+     font-weight: 700;
+ }
+
+ /*botones*/
+ .boton{
+color:#ffffff;
+font-weight: 700;
+text-decoration: none;
+font-size:1.8rem;
+padding-top:1rem;
+padding-right:3rem;
+padding-bottom:1rem;
+padding-left: 3rem; 
+text-align: center;
+
+ }
+.d-block{
+    display: block;
+}
+ .btn-amarillo{
+background-color:#E08709;
+ }
+
+ .btn-verde{
+background-color: #71B100;
+margin-top:2rem;
+/* para enlances se utiliza display: inline-block; */
+display: inline-block;
+margin-left:125rem;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 2rem;
+margin-right: 2rem;
+
+ }
+ img{
+     max-width: 100%; /*para hacer las imagenes responsivas ajustandolas */
+ }
+
+ .imagen-contacto{
+     background-image: url(../img/encuentra.jpg);
+     height: 40rem;
+     background-size:cover; 
+     display: flex;
+     align-items: center;
+     background-position: center center;
+ }
+.contenido-contacto{
+    flex: 1;
+    color: #ffffff;
+    
+}
+
+.contenido-contacto p{
+    line-height: 5rem;
+  
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+/* Seccion inferior */
+.seccion-inferior{
+    display:flex;
+    justify-content: space-between;
+
+}
+.seccion-inferior .blog{
+    flex-basis: 6 0%;
+}
+
+.seccion-inferior .testimoniales{
+    flex-basis:  calc(40% - 2rem);
+}
+
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog .imagen-blog{
+flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada{
+flex-basis: calc(60% - 3rem);
+
+}
+
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.texto-entrada a{
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.texto-entrada h4::after{
+    
+    /* pseudoelementos */
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71B100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span{
+    color: #E08709;
+}
+
+.centrar-texto{
+    text-align: center;
+    font-weight:700;
+    font-size: 2.8rem;
+}
+
+.testimonial{
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color:#ffffff;
+    border-radius: 2rem;
+}
+
+.testimonial p{
+    text-align: right;
+
+    
+}
+
+.testimonial blockquote::before{
+    content: '';
+    background-image: url("../img/comilla.svg");
+    width:4rem;
+    height: 4rem;
+    position: absolute;
+    left:-2rem;
+}
+
+.testimonial blockquote{
+    position: relative;
+   padding-left: 5rem;
+   font-weight: 300;
+}
+
+/* footer */
+.site-footer{
+    background-color: #0f0f0f;
+    margin: 0;
+    
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.contenedor-footer a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+.copy{
+    margin:0;
+    color: #ffffff;
+}
